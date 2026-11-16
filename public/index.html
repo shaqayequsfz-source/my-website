@@ -1,10 +1,6 @@
-<!doctype html>
-<html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Shaqayegh Yousefizadeh</title>
+<title>Shaqayeq Yousefizadeh</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Shaqayegh Yousefizadeh, Product Designer (UX/UI). Ten products across AI SaaS, healthcare, HR tech, EV charging, logistics, legal tech, social impact and brand tools.">
+<meta name="description" content="Shaqayeq Yousefizadeh, Product Designer (UX/UI). Ten products across AI SaaS, healthcare, HR tech, EV charging, logistics, legal tech, social impact and brand tools.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -35,19 +31,14 @@
   --shadow:0 1px 0 rgba(0,0,0,.3),0 16px 40px -16px rgba(0,0,0,.7); color-scheme:dark}
 
 *{box-sizing:border-box}
-html.lenis,html.lenis body{height:auto}
-.lenis.lenis-smooth{scroll-behavior:auto!important}
-.lenis.lenis-stopped{overflow:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+section[id],main[id]{scroll-margin-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}}
 body{background:var(--canvas);color:var(--ink);font-family:var(--f-body);font-size:16.5px;line-height:1.6;
   background-image:radial-gradient(var(--dot) 1px,transparent 1.3px);background-size:24px 24px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
-body.lock,html.lock{overflow:hidden}
-html{scroll-padding-top:76px}
-section[id]{scroll-margin-top:70px}
-.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
-.ribbon.drag,.gallery.drag,.cflow.drag{user-select:none;-webkit-user-select:none}
-.ribbon,.gallery,.cflow{overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+body.lock{overflow:hidden}
 html,body{overflow-x:clip}
 .cur,.cur-ring{opacity:0;transition:opacity .3s}
 .moved .cur,.moved .cur-ring{opacity:1}
@@ -204,7 +195,7 @@ section{padding-block:96px}
 .card .top .mono{font-size:11px}
 .card .stage{position:relative;height:340px;background:color-mix(in oklab,var(--p) 13%,var(--paper));overflow:hidden;
   background-image:radial-gradient(color-mix(in oklab,var(--p) 30%,transparent) 1px,transparent 1.3px);background-size:18px 18px}
-.card .stage .s{translate:0 calc(var(--py,0)*1%);position:absolute;left:50%;bottom:-46px;width:150px;margin-left:-75px;transition:transform .7s var(--ease)}
+.card .stage .s{position:absolute;left:50%;bottom:-46px;width:150px;margin-left:-75px;transition:transform .7s var(--ease)}
 .card .stage .s:nth-child(1){transform:translateX(-118px) rotate(-6deg)}
 .card .stage .s:nth-child(2){transform:translateY(-14px);z-index:2}
 .card .stage .s:nth-child(3){transform:translateX(118px) rotate(6deg)}
@@ -424,7 +415,7 @@ footer{padding-block:36px 48px;display:flex;justify-content:space-between;gap:16
 .note-src{font-size:13px;color:var(--ink-3);margin-top:12px}
 
 /* LIGHTBOX */
-.lb{position:fixed;inset:0;z-index:200;overscroll-behavior:contain;background:color-mix(in oklab,#07070B 88%,transparent);display:flex;flex-direction:column;align-items:center;overflow-y:auto;padding:max(64px,env(safe-area-inset-top,0px)) 16px 40px;opacity:0;visibility:hidden;transition:opacity .3s,visibility 0s .3s}
+.lb{position:fixed;inset:0;z-index:200;background:color-mix(in oklab,#07070B 88%,transparent);display:flex;flex-direction:column;align-items:center;overflow-y:auto;padding:max(64px,env(safe-area-inset-top,0px)) 16px 40px;opacity:0;visibility:hidden;transition:opacity .3s,visibility 0s .3s}
 .lb.open{opacity:1;visibility:visible;transition:opacity .3s}
 .lb img{width:min(440px,100%);border-radius:14px;box-shadow:0 30px 60px -20px #000;transform:scale(.96);transition:transform .45s var(--ease)}
 .lb.open img{transform:none}
@@ -441,7 +432,7 @@ footer{padding-block:36px 48px;display:flex;justify-content:space-between;gap:16
 
 <header class="nav" id="nav">
   <div class="wrap">
-    <a class="mark" href="#top" aria-label="Shaqayegh Yousefizadeh, home"><i>SY</i><span>Shaqayegh Yousefizadeh</span></a>
+    <a class="mark" href="#top" aria-label="Shaqayeq Yousefizadeh, home"><i>SY</i><span>Shaqayeq Yousefizadeh</span></a>
     <nav aria-label="Sections" id="navLinks"><span class="pill"></span><a href="#work">Work</a><a href="#about">About</a><a href="#approach">Approach</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
     <div class="avail"><span>Open to product design roles</span></div>
     <button class="icon-btn mag" id="themeBtn" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
@@ -458,7 +449,7 @@ footer{padding-block:36px 48px;display:flex;justify-content:space-between;gap:16
       <div class="ctas rv">
         <a class="btn primary mag" href="#work">Explore my work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
         <a class="btn ghost mag" href="#contact">Get in touch</a>
-        <a class="btn ghost mag dl" href="Shaqayegh-Yousefizadeh-Portfolio.pdf" download data-cursor="PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download PDF</a>
+        <a class="btn ghost mag dl" href="Shaqayeq-Yousefizadeh-Portfolio.pdf" download data-cursor="PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download PDF</a>
       </div>
     </div>
     <div class="labels rv" id="heroLabels"></div>
@@ -513,7 +504,7 @@ footer{padding-block:36px 48px;display:flex;justify-content:space-between;gap:16
         <span class="mono">A little about me</span>
         <h2 data-lines>Designing with intention, from the first flow to the final interface.</h2>
         <div class="prose">
-          <p class="rv">I'm Shaqayegh, a Product Designer focused on UX and UI design.</p>
+          <p class="rv">I'm Shaqayeq, a Product Designer focused on UX and UI design.</p>
           <p class="rv">I work across the product design process, from mapping user flows and planning interactions to creating clear, intuitive interfaces.</p>
           <p class="rv">I enjoy turning complex product requirements into thoughtful digital experiences, where functionality, usability, and visual clarity work together. The products in this portfolio range from an AI agent that answers a business's calls to booking a doctor's visit and planning a fleet of trucks, and each one started with the same question: what does the person need to decide at this step?</p>
           <p class="rv">For me, good design goes beyond appearance. It's about understanding how a product works, how people interact with it, and how every design decision contributes to a better experience.</p>
@@ -579,7 +570,7 @@ footer{padding-block:36px 48px;display:flex;justify-content:space-between;gap:16
         </div>
         <div class="range rv">
           <div><span class="mono">AI products</span><b>Agents people can trust</b><p>ClientServe, Dadino, Nadin learning</p></div>
-          <div><span class="mono">Mobile apps</span><b>Patient, driver, donor</b><p>Nobexa, TechnoCharge, Nobaar, Be Mehrbani</p></div>
+          <div><span class="mono">Mobile apps</span><b>Patient, driver, donor</b><p>Nobexa, TechnoCharge, Nobaar, Be Mehrabani</p></div>
           <div><span class="mono">B2B &amp; SaaS</span><b>Ordering, inbox, tools</b><p>Chikino, ClientServe inbox, Dizno Studio</p></div>
           <div><span class="mono">Commerce</span><b>Donations &amp; shop</b><p>Noormobin, TechnoCharge site</p></div>
           <div><span class="mono">Websites</span><b>Product storytelling</b><p>Dizno, TechnoCharge, Chikino</p></div>
@@ -600,7 +591,7 @@ footer{padding-block:36px 48px;display:flex;justify-content:space-between;gap:16
       </div>
     </div>
   </section>
-  <footer class="wrap"><span>© 2026 Shaqayegh Yousefizadeh</span><span>Designed flow first.</span></footer>
+  <footer class="wrap"><span>© 2026 Shaqayeq Yousefizadeh</span><span>Designed flow first.</span></footer>
 </main>
 
 <div class="case" id="case" role="dialog" aria-modal="true" aria-labelledby="caseTitle" data-lenis-prevent></div>
@@ -608,7 +599,6 @@ footer{padding-block:36px 48px;display:flex;justify-content:space-between;gap:16
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script>
 /* ===== CONTACT DETAILS ===== */
 const CONFIG = {
@@ -622,7 +612,6 @@ const IMG = {"img": {"nx-home": "data:image/webp;base64,UklGRopSAABXRUJQVlA4IH5S
 <script>
 const I=k=>IMG.img[k], W=k=>IMG.meta[k];
 const isDesk=k=>{const m=W(k);return m&&m[0]/m[1]>0.75};
-const setLock=on=>{document.body.classList.toggle('lock',on);document.documentElement.classList.toggle('lock',on)};
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const HAS_G=typeof gsap!=='undefined'&&!RM;
 const FINE=matchMedia('(hover:hover) and (pointer:fine)').matches;
@@ -704,18 +693,18 @@ const OLD=[
  gallery:["ck-dash","ck-dash2","ck-cargo","ck-qty","ck-fleet","ck-plan","ck-review","ck-driver","ck-web"],
  learn:"Letting the cargo type decide units and requirements removed most validation errors before they could happen. In B2B tools, people trust suggestions when they can see the arithmetic, so the capacity summary always shows the numbers behind each recommendation."},
 
-{id:"be-mehrbani",name:"Be Mehrbani",cat:"Social Impact · Education sponsorship",color:"#3B3497",platform:"Mobile web app + landing page",lang:"Persian (RTL)",
+{id:"be-mehrabani",name:"Be Mehrabani",cat:"Social Impact · Education sponsorship",color:"#3B3497",platform:"Mobile web app + landing page",lang:"Persian (RTL)",
  card:"A sponsorship platform connecting donors with students in need, built around student stories, monthly commitments and clear payment tracking.",
  tags:["Story-first cards","Adjustable commitments","Referral flow"],
  cover:["bm-home","bm-students","bm-commit","bm-done","bm-pay"],
- intro:"Be Mehrbani connects donors with students from low-income families across Iran. Sponsors choose students to support, set a monthly commitment, and follow payments and updates. Anyone can also refer a student who needs help.",
+ intro:"Be Mehrabani connects donors with students from low-income families across Iran. Sponsors choose students to support, set a monthly commitment, and follow payments and updates. Anyone can also refer a student who needs help.",
  challenge:["Sponsorship is a long-term relationship involving money. Donors need to feel connected to a real student without the product feeling like a catalog of children.","They also need to manage recurring commitments, due dates and a wallet without confusion, and people referring a student need realistic expectations."],
  role:"Product Designer, UX & UI. I designed the sponsor journey, the commitment and payment flows, the referral flow and the landing page.",
  scope:["User flows","Information architecture","Sponsorship flows","Payments & wallet","Landing page","High-fidelity UI"],
  flowTitle:"Sponsor a student",
  flow:[["bm-home","Home"],["bm-students","Students","tap · Students"],["bm-commit","Commitments","sponsor"],["bm-pay","Payments","pay due"],["bm-done","Thank you","confirm"]],
  decisions:[
-  {t:"Students as stories",img:"bm-students",p:"A list of names and amounts turns children into transactions.",d:"Each card shows the student's name, grade and province, and how much of their scholarship is funded. The main action is \"View the student's story\". A floating option lets Be Mehrbani choose a suitable student for donors who don't want to pick.",w:"Donors connect with a person first, and people who find choosing hard have an easy way forward."},
+  {t:"Students as stories",img:"bm-students",p:"A list of names and amounts turns children into transactions.",d:"Each card shows the student's name, grade and province, and how much of their scholarship is funded. The main action is \"View the student's story\". A floating option lets Be Mehrabani choose a suitable student for donors who don't want to pick.",w:"Donors connect with a person first, and people who find choosing hard have an easy way forward."},
   {t:"Commitments you can tune",img:"bm-commit",p:"Sponsors support several students at different levels, and their budgets change.",d:"For each student, support and backup percentages have their own steppers, and the monthly total recalculates as they change. The top of the screen shows the overall monthly commitment and the number of students.",w:"Sponsors can adjust support without cancelling it, and always see what they will pay each month."},
   {t:"Due dates on the home screen",img:"bm-home",p:"Missed payments hurt students directly.",d:"Home shows upcoming dues with amount, recipient and a Pay button, plus a summary of active, paid and overdue support.",w:"The most time-sensitive task is the first thing a sponsor sees."},
   {t:"Referral with honest expectations",img:"bm-refer",p:"People who refer a student may assume the student will be accepted.",d:"Referral is a three-step form (student, contact & conditions, referrer) that opens with a notice: submitting doesn't mean acceptance, and the team will follow up after review.",w:"Clear expectations at the start prevent disappointment later and reduce support requests."}],
@@ -821,7 +810,7 @@ const NEW=[
  learn:"Two audiences, two apps. Customers needed reassurance about price, and drivers needed speed and large, glanceable information. Designing both sides made the handoffs between them clearer."}
 ];
 
-const ORDER=["clientserve","nobexa","nadin","technocharge","chikino","dizno","dadino","be-mehrbani","noormobin","nobaar"];
+const ORDER=["clientserve","nobexa","nadin","technocharge","chikino","dizno","dadino","be-mehrabani","noormobin","nobaar"];
 const ALL=[...OLD,...NEW];
 const P=ORDER.map(id=>ALL.find(p=>p.id===id));
 const FEATURE={clientserve:"",dizno:"rev"};
@@ -867,13 +856,12 @@ function animateRibbon(root,autoScroll){
   return ()=>clearInterval(t);
 }
 function dragScroll(el){
-  let sx=0,sl=0,moved=false,id=null;
-  const mv=e=>{if(e.pointerId!==id)return;const dx=e.clientX-sx;if(Math.abs(dx)>4){moved=true;el.classList.add('drag');}el.scrollLeft=sl-dx;};
-  const up=e=>{if(e.pointerId!==id)return;id=null;removeEventListener('pointermove',mv);removeEventListener('pointerup',up);removeEventListener('pointercancel',up);el.classList.remove('drag');setTimeout(()=>moved=false,0);};
-  el.addEventListener('pointerdown',e=>{el._user=true;if(e.pointerType!=='mouse'||e.button!==0)return;id=e.pointerId;moved=false;sx=e.clientX;sl=el.scrollLeft;addEventListener('pointermove',mv);addEventListener('pointerup',up);addEventListener('pointercancel',up);});
+  let down=false,sx=0,sl=0,moved=false;
+  el.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;down=true;moved=false;sx=e.clientX;sl=el.scrollLeft;el._user=true;});
+  addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-sx;if(Math.abs(dx)>4){moved=true;el.classList.add('drag');}el.scrollLeft=sl-dx;});
+  addEventListener('pointerup',()=>{if(!down)return;down=false;el.classList.remove('drag');setTimeout(()=>moved=false,0);});
   el.addEventListener('click',e=>{if(moved){e.stopPropagation();e.preventDefault();}},true);
   el.addEventListener('wheel',()=>el._user=true,{passive:true});
-  el.addEventListener('touchstart',()=>el._user=true,{passive:true});
 }
 
 /* hero flows */
@@ -891,7 +879,7 @@ function setFlow(i){
   [...ft.querySelectorAll('button')].forEach((b,j)=>b.setAttribute('aria-selected',j===i));
   movePill(ft,ft.querySelectorAll('button')[i]);
   fmeta.innerHTML=`Live flow · ${p.flow.length} frames · <a href="#${p.id}" style="color:var(--accent)">Open case study</a>`;
-  const render=()=>{stopHero();hr._user=false;hr.innerHTML=ribbon(p.flow,'Shaqayegh');hr.scrollLeft=0;stopHero=animateRibbon(hr,true);
+  const render=()=>{stopHero();hr._user=false;hr.innerHTML=ribbon(p.flow,'Shaqayeq');hr.scrollLeft=0;stopHero=animateRibbon(hr,true);
     if(HAS_G) gsap.from(hr.querySelectorAll('.rf,.conn'),{y:24,opacity:0,duration:.6,stagger:.05,ease:'power3.out'});};
   if(HAS_G&&hr.children.length){gsap.to(hr.querySelectorAll('.rf,.conn'),{y:-16,opacity:0,duration:.25,stagger:.02,onComplete:render});}else render();
 }
@@ -933,7 +921,7 @@ document.getElementById('links').innerHTML=
    <div class="acts"><button type="button" class="cp" data-copy="+${CONFIG.phoneIntl}">Copy</button>
    <a class="ib" href="https://wa.me/${CONFIG.phoneIntl}" target="_blank" rel="noopener" aria-label="Message on WhatsApp" data-cursor="WhatsApp">${ico.wa}</a>
    <a class="ib" href="https://t.me/+${CONFIG.phoneIntl}" target="_blank" rel="noopener" aria-label="Message on Telegram" data-cursor="Telegram">${ico.tg}</a></div></div>`+
- `<a class="lnk pdf" href="Shaqayegh-Yousefizadeh-Portfolio.pdf" download data-cursor="PDF"><div style="min-width:0"><small>Portfolio PDF</small><span>Download the PDF version</span></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>`;
+ `<a class="lnk pdf" href="Shaqayeq-Yousefizadeh-Portfolio.pdf" download data-cursor="PDF"><div style="min-width:0"><small>Portfolio PDF</small><span>Download the PDF version</span></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>`;
 document.getElementById('links').addEventListener('click',e=>{const b=e.target.closest('.cp');if(!b)return;const done=()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1600)};
   try{navigator.clipboard.writeText(b.dataset.copy).then(done).catch(()=>sel(b))}catch(_){sel(b)}});
 function sel(b){const r=document.createRange();r.selectNodeContents(b.closest('.lnk').querySelector('span'));getSelection().removeAllRanges();getSelection().addRange(r);}
@@ -995,15 +983,15 @@ function route(){
   const p=P.find(x=>x.id===id);
   if(p){
     renderCase(p);caseEl.scrollTop=0;
-    if(!caseEl.classList.contains('open')){caseEl.classList.add('open');setLock(true);lenis&&lenis.stop();}
+    if(!caseEl.classList.contains('open')){caseEl.classList.add('open');document.body.classList.add('lock');lenis&&lenis.stop();}
     setTimeout(()=>caseEl.querySelector('[data-close]')?.focus({preventScroll:true}),80);
     lastId=p.id;
   }else if(caseEl.classList.contains('open')){
-    caseEl.classList.remove('open');setLock(false);lenis&&lenis.start();stopCase();
+    caseEl.classList.remove('open');document.body.classList.remove('lock');lenis&&lenis.start();stopCase();
     const card=document.querySelector(`.card[data-id="${lastId}"]`);card?.focus({preventScroll:true});
   }
 }
-function closeCase(){history.replaceState(null,'',location.pathname+location.search+'#work');route();}
+function closeCase(){history.pushState(null,'',location.pathname+location.search+'#work');route();}
 caseEl.addEventListener('click',e=>{
   const g=e.target.closest('[data-go]'); if(g){caseEl.style.setProperty('--cx','50%');caseEl.style.setProperty('--cy','50%');location.hash=g.dataset.go;return;}
   if(e.target.closest('[data-close]')) closeCase();
@@ -1018,9 +1006,9 @@ document.addEventListener('click',e=>{
   const b=e.target.closest('button.scr'); if(!b) return;
   lbFrom=b;const scope=b.closest('.gallery,.ribbon-inner,.decisions,.explore,.case-cover')||document;
   lbList=[...scope.querySelectorAll('button.scr')];showLb(lbList.indexOf(b));
-  lb.classList.add('open');setLock(true);lenis&&lenis.stop();document.getElementById('lbX').focus();
+  lb.classList.add('open');document.body.classList.add('lock');lenis&&lenis.stop();document.getElementById('lbX').focus();
 });
-function closeLb(){lb.classList.remove('open');if(!caseEl.classList.contains('open')){setLock(false);lenis&&lenis.start();}lbFrom?.focus({preventScroll:true});}
+function closeLb(){lb.classList.remove('open');if(!caseEl.classList.contains('open')){document.body.classList.remove('lock');lenis&&lenis.start();}lbFrom?.focus({preventScroll:true});}
 lb.addEventListener('click',e=>{if(e.target.closest('#lbP')){showLb(lbIdx-1);return;}if(e.target.closest('#lbN')){showLb(lbIdx+1);return;}if(e.target===lb||e.target.closest('#lbX'))closeLb();});
 document.addEventListener('keydown',e=>{
   if(lb.classList.contains('open')){if(e.key==='Escape')closeLb();if(e.key==='ArrowRight')showLb(lbIdx+1);if(e.key==='ArrowLeft')showLb(lbIdx-1);return;}
@@ -1049,16 +1037,14 @@ function onScroll(y){
   navL.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
 }
 
-/* ---------- smooth scroll ---------- */
-let lenis=null;
-if(typeof Lenis!=='undefined'&&!RM&&FINE){
-  lenis=new Lenis({lerp:.1,wheelMultiplier:1,smoothWheel:true,prevent:n=>!!n.closest&&!!n.closest('[data-lenis-prevent]')});
-  document.documentElement.classList.add('lenis');
-  lenis.on('scroll',e=>{onScroll(e.scroll);if(typeof ScrollTrigger!=='undefined')ScrollTrigger.update();});
-  if(typeof gsap!=='undefined'){gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);}
-  else{const raf=t=>{lenis.raf(t);requestAnimationFrame(raf)};requestAnimationFrame(raf);}
-  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href').slice(1);const t=document.getElementById(id);if(t&&!P.find(p=>p.id===id)){e.preventDefault();lenis.scrollTo(id==='top'?0:t,{offset:-70,duration:1.4});}}));
-}else{addEventListener('scroll',()=>onScroll(scrollY),{passive:true});}
+/* ---------- reliable native page scrolling ---------- */
+/*
+  Keep the document on the browser's native scroll container. Lenis is
+  intentionally not initialized: native scrolling is more reliable across
+  touch devices, trackpads, keyboard navigation and embedded browsers.
+  ScrollTrigger observes the normal window scroll position.
+*/
+window.addEventListener('scroll',()=>onScroll(window.scrollY || window.pageYOffset || 0),{passive:true});
 
 /* ---------- custom cursor + magnetic ---------- */
 if(FINE&&!RM){
@@ -1089,17 +1075,8 @@ document.getElementById('glow').style.cssText+='left:70%;top:30%';
 
 /* ---------- GSAP choreography ---------- */
 function splitLines(el){
-  const wrap=node=>{
-    [...node.childNodes].forEach(n=>{
-      if(n.nodeType===3){
-        const f=document.createDocumentFragment();
-        n.textContent.split(/(\s+)/).forEach(w=>{if(!w)return;if(/^\s+$/.test(w)){f.append(w);return;}
-          const o=document.createElement('span');o.className='ln';const i=document.createElement('span');i.textContent=w;o.append(i);f.append(o);});
-        n.replaceWith(f);
-      }else if(n.nodeType===1)wrap(n);
-    });
-  };
-  wrap(el);
+  const words=el.innerHTML.split(/(\s+)/);
+  el.innerHTML=words.map(w=>/^\s+$/.test(w)?w:`<span class="ln"><span>${w}</span></span>`).join('');
   return el.querySelectorAll('.ln > span');
 }
 if(HAS_G&&typeof ScrollTrigger!=='undefined'){
@@ -1123,7 +1100,7 @@ if(HAS_G&&typeof ScrollTrigger!=='undefined'){
   gsap.utils.toArray('.card').forEach((cd,i)=>{
     gsap.fromTo(cd,{y:70,opacity:.001},{y:0,opacity:1,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:cd,start:'top 92%',once:true}});
     const s=cd.querySelectorAll('.stage .s');
-    gsap.fromTo(s,{'--py':18},{'--py':-6,ease:'none',scrollTrigger:{trigger:cd,start:'top bottom',end:'bottom top',scrub:true}});
+    gsap.fromTo(s,{yPercent:18},{yPercent:-6,ease:'none',scrollTrigger:{trigger:cd,start:'top bottom',end:'bottom top',scrub:true}});
   });
   /* counters */
   document.querySelectorAll('[data-count]').forEach(el=>{const n=+el.dataset.count;const o={v:0};
@@ -1154,5 +1131,3 @@ setFlow(0);
 onScroll(scrollY);
 route();
 </script>
-
-  <!-- deployment update -->
