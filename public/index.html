@@ -757,40 +757,70 @@ footer{padding-block:36px 48px;display:flex;justify-content:space-between;gap:16
   <h3>Tools</h3>
   <p>What I use day to day, grouped by stage.</p>
 
-<table style="width: 100%; border-collapse: collapse; border: none; text-align: center;">
+<table style="width:100%; border-collapse:collapse; border:none;">
   <tbody>
     <tr>
-      <td style="border: none; text-align: center; vertical-align: middle;">
-        <strong>Design</strong><br>
-        Figma · Adobe XD · Sketch · Illustrator · Photoshop
+      <td style="border:none; text-align:left; vertical-align:middle;">
+        <div class="tools">
+          <span>FIGMA</span><span>ADOBE XD</span><span>SKETCH</span><span>ILLUSTRATOR</span><span>PHOTOSHOP</span>
+        </div>
       </td>
+      <td style="border:none; text-align:right; vertical-align:middle; font-family:monospace; white-space:nowrap;">DESIGN</td>
     </tr>
     <tr>
-      <td style="border: none; text-align: center; vertical-align: middle;">
-        <strong>Prototype</strong><br>
-        Figma Prototyping · ProtoPie · Framer
+      <td style="border:none; text-align:left; vertical-align:middle;">
+        <div class="tools">
+          <span>FIGMA PROTOTYPING</span><span>PROTOPIE</span><span>FRAMER</span>
+        </div>
       </td>
+      <td style="border:none; text-align:right; vertical-align:middle; font-family:monospace; white-space:nowrap;">PROTOTYPE</td>
     </tr>
     <tr>
-      <td style="border: none; text-align: center; vertical-align: middle;">
-        <strong>Flows &amp; Research</strong><br>
-        FigJam · Miro · Whimsical · Maze · Hotjar
+      <td style="border:none; text-align:left; vertical-align:middle;">
+        <div class="tools">
+          <span>FIGJAM</span><span>MIRO</span><span>WHIMSICAL</span><span>MAZE</span><span>HOTJAR</span>
+        </div>
       </td>
+      <td style="border:none; text-align:right; vertical-align:middle; font-family:monospace; white-space:nowrap;">FLOWS &amp; RESEARCH</td>
     </tr>
     <tr>
-      <td style="border: none; text-align: center; vertical-align: middle;">
-        <strong>Handoff &amp; Team</strong><br>
-        Figma Dev Mode · Zeplin · Jira · Notion
+      <td style="border:none; text-align:left; vertical-align:middle;">
+        <div class="tools">
+          <span>FIGMA DEV MODE</span><span>ZEPLIN</span><span>JIRA</span><span>NOTION</span>
+        </div>
       </td>
+      <td style="border:none; text-align:right; vertical-align:middle; font-family:monospace; white-space:nowrap;">HANDOFF &amp; TEAM</td>
     </tr>
     <tr>
-      <td style="border: none; text-align: center; vertical-align: middle;">
-        <strong>AI-Assisted</strong><br>
-        Figma AI · UX Pilot · ChatGPT · Claude
+      <td style="border:none; text-align:left; vertical-align:middle;">
+        <div class="tools">
+          <span>FIGMA AI</span><span>UX PILOT</span><span>CHATGPT</span><span>CLAUDE</span>
+        </div>
       </td>
+      <td style="border:none; text-align:right; vertical-align:middle; font-family:monospace; white-space:nowrap;">AI-ASSISTED</td>
     </tr>
   </tbody>
 </table>
+
+<style>
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .tools span {
+    display: inline-block;
+    border: 1px solid currentColor;
+    padding: 7px 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+</style>
 </div>
 
         <div class="range rv">
